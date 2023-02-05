@@ -4,7 +4,7 @@ just run the script and Fill in the required fields
 
 install git first:
 ```
-apt install git
+apt update && apt install git
 ```
 Clone the script:
 ```
