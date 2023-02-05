@@ -5,5 +5,10 @@ just run the script and Fill in the required fields
 git clone https://github.com/omariscoming/ReverseProxy_x-ui.git
 ```
 
+next:
+```
+bash ReverseProxy_x-ui/install.sh
+```
+
 ### Path: /wardaddy/randomPort
 
