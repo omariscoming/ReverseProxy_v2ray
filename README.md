@@ -12,7 +12,7 @@ git clone https://github.com/omariscoming/ReverseProxy_x-ui.git
 ```
 run the script in ReverseProxy_x-ui directory:
 ```
-bash install.sh
+bash ReverseProxy_x-ui/install.sh
 ```
 Write your Doamin and Press Enter
 
