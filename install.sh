@@ -1,5 +1,3 @@
-apt-get update -y && apt-get upgrade -y
-sudo apt install nginx certbot python3-certbot-nginx -y
 
 read -p "Enter Your Domain: " DOMAIN
 mkdomain(){
