@@ -5,8 +5,6 @@ read -p "Enter Your Domain: " DOMAIN
 
 read -p "Enter your Subdomain: " SUBDOMAIN
 
-echo "Creating $SUBDOMAIN.$DOMAIN ..."
-
 
 mkdomain(){
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/$SUBDOMAIN.$DOMAIN
