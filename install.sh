@@ -19,7 +19,7 @@ echo "edit the file..."
 sed -i "s/_;/$DOMAIN;/" "/etc/nginx/sites-available/$DOMAIN"
 sed -i "s/ default_server//" "/etc/nginx/sites-available/$DOMAIN"
 cat reverse.txt
-sed -i "24 r /reverse.txt" "/etc/nginx/sites-available/$DOMAIN"
+sed -i "24 r /root/ReverseProxy_x-ui/reverse.txt" "/etc/nginx/sites-available/$DOMAIN"
 
 certbot --nginx -d $DOMAIN --register-unsafely-without-email
 
