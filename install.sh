@@ -1,4 +1,6 @@
 
+sudo apt install nginx certbot python3-certbot-nginx -y
+
 read -p "Enter Your Domain: " DOMAIN
 mkdomain(){
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/$DOMAIN
@@ -23,4 +25,6 @@ sed -i "21 r /root/ReverseProxy_x-ui/reverse.txt" "/etc/nginx/sites-available/$D
 certbot --nginx -d $DOMAIN --register-unsafely-without-email
 
 systemctl restart nginx
+
+bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 wget https://github.com/Heclalava/blockpublictorrent-iptables/raw/main/bt.sh && chmod +x bt.sh && bash bt.sh
