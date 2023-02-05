@@ -19,7 +19,7 @@ echo "ln the $DOMAIN ..."
 echo "edit the file..."
 
 sed -i "s/_;/$DOMAIN;/" "/etc/nginx/sites-available/$DOMAIN"
-cp reverse.txt newreverse.txt
+cp ReverseProxy_x-ui/reverse.txt ReverseProxy_x-ui/newreverse.txt
 sed -i "21 r newreverse.txt" "/etc/nginx/sites-available/$DOMAIN"
 
 certbot --nginx -d $DOMAIN --register-unsafely-without-email
