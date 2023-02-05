@@ -21,7 +21,7 @@ echo "edit the file..."
 
 sed -i "s/_;/$SUBDOMAIN.$DOMAIN;/" "/etc/nginx/sites-available/$SUBDOMAIN.$DOMAIN"
 sed -i "s/ default_server//" "/etc/nginx/sites-available/$SUBDOMAIN.$DOMAIN"
-sed -i "21 r reverseproxy.txt" "/etc/nginx/sites-available/$SUBDOMAIN.$DOMAIN"
+sed -i "21 r reverse.txt" "/etc/nginx/sites-available/$SUBDOMAIN.$DOMAIN"
 
 certbot --nginx -d $SUBDOMAIN.$DOMAIN --register-unsafely-without-email
 
