@@ -26,4 +26,5 @@ certbot --nginx -d $DOMAIN --register-unsafely-without-email
 
 systemctl restart nginx
 
+apt install curl
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
