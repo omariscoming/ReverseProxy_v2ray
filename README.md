@@ -1,14 +1,21 @@
 # ReverseProxy_x-ui
 A script to run nginx reverse proxy with x-ui panel
 just run the script and Fill in the required fields
+
+install git first:
+```
+apt install git
+```
+Clone the script:
 ```
 git clone https://github.com/omariscoming/ReverseProxy_x-ui.git
 ```
-
-next:
+run the script in ReverseProxy_x-ui directory:
 ```
 bash install.sh
 ```
+Write your Doamin and Press Enter
+
 
 ### Path: /wardaddy/randomPort
 
