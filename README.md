@@ -2,7 +2,7 @@
 ## اجری ریوراس پروکسی روی سی‌دی‌ان
 فقط کافیه اسکریپت زیر رو اجرا کنید:
 ```
-apt update && apt install git -y && git clone https://github.com/omariscoming/ReverseProxy_x-ui.git && bash ReverseProxy_x-ui/install.sh
+apt update && apt install git -y && git clone https://github.com/omariscoming/ReverseProxy_v2ray.git && bash ReverseProxy_x-ui/install.sh
 
 ```
 بعد از درخواست دامنه، رکورد ثبت شده در CDN را وار کنید
