@@ -1,5 +1,5 @@
 ### [English Guide](https://github.com/omariscoming/ReverseProxy_v2ray/blob/main/English.md)
-# ReverseProxy_x-ui
+# ReverseProxy_V2ray
 ## اجری ریورس پروکسی روی سی‌دی‌ان
 فقط کافیه اسکریپت زیر رو اجرا کنید:
 ```
