@@ -1,4 +1,4 @@
-# ReverseProxy_x-ui
+# ReverseProxy_V2ray
 ## a script to run reverse proxy on cdn for v2ray
 Run rhe script:
 ```
