@@ -50,12 +50,7 @@ restartnginx
 }
 
 secondoption(){
-installnginx
-mkdomain
-lndomain
-copying
-certbot
-restartnginx
+firstoption
 xuiinstall
 }
 
