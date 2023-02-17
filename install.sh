@@ -46,7 +46,7 @@ certbot
 restartnginx
 }
 
-secondoprion(){
+secondoption(){
 mkdomain
 lndomain
 copying
