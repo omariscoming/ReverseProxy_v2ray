@@ -3,9 +3,10 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 
+read -p "Enter Your Domain: " DOMAIN
+
 mkdomain(){
 sudo apt install nginx certbot python3-certbot-nginx -y
-read -p "Enter Your Domain: " DOMAIN
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/$DOMAIN
 ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/
 sed -i "s/_;/$DOMAIN;/" "/etc/nginx/sites-available/$DOMAIN"
@@ -18,6 +19,7 @@ systemctl restart nginx
 xuiinstall(){
 apt install curl
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+x-ui restart
 }
 
 backup(){
