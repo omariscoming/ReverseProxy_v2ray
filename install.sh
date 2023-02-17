@@ -3,9 +3,8 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 
-read -p "Enter Your Domain: " DOMAIN
-
 mkdomain(){
+read -p "Enter Your Domain: " DOMAIN
 sudo apt install nginx certbot python3-certbot-nginx -y
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/$DOMAIN
 ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/
