@@ -54,17 +54,5 @@ firstoption
 xuiinstall
 }
 
-echo -e "${RED}1_install Nginx\n${GREEN}2_install Nginx + x-ui\n${YELLOW}3_Backup\n\n${NOCOLOR}chose an option:"
-read VAR
-case $VAR in
-    1)
-        firstoption
-        ;;
-    2)
-        secondoption
-        ;;
-    3)
-        backup
-        ;;
-    esac
+firstoption
 
