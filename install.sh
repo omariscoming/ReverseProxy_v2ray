@@ -19,13 +19,13 @@ systemctl restart nginx
 xuiinstall(){
 apt install curl
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
-x-ui restart
 }
 
 backup(){
 read -p "Oldserver: " OLDONE
 read -p "USERNAME: " USERNAME
 scp $USERNAME@$OLDONE:/etc/x-ui/x-ui.db /etc/x-ui/
+x-ui restart
 }
 
 echo -e "${RED}1_install Nginx\n${GREEN}2_install Nginx + x-ui\n${YELLOW}3_Backup\n\n${NOCOLOR}chose an option:"
