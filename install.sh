@@ -3,10 +3,12 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 
+installnginx(){
+sudo apt install nginx certbot python3-certbot-nginx -y
+}
 
 mkdomain(){
 read -p "Enter Your Domain: " DOMAIN
-sudo apt install nginx certbot python3-certbot-nginx -y
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/$DOMAIN
 }
 lndomain(){
@@ -39,6 +41,7 @@ scp $USERNAME@$OLDONE:/etc/x-ui/x-ui.db /etc/x-ui/
 }
 
 firstoption(){
+installnginx
 mkdomain
 lndomain
 copying
@@ -47,6 +50,7 @@ restartnginx
 }
 
 secondoption(){
+installnginx
 mkdomain
 lndomain
 copying
