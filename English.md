@@ -1,6 +1,10 @@
-# ReverseProxy_V2ray
-## a script to run reverse proxy on cdn for v2ray
-Run rhe script:
+# V2ray_Tool
+## a script with V2ray Tools:
+
+1_Nginx(cdn) <br/>
+2_Nginx + X-ui <br/>
+3_Backup
+
 ```
 apt update && apt install git -y && git clone https://github.com/omariscoming/ReverseProxy_v2ray.git && bash ReverseProxy_x-ui/install.sh
 
