@@ -2,8 +2,8 @@
 # ReverseProxy_V2ray
 ## ابزاری برای V2ray
 
-1_Nginx(cdn)
-2_Nginx + X-ui
+1_Nginx(cdn) <br/>
+2_Nginx + X-ui <br/>
 3_Backup
 
 فقط کافیه اسکریپت زیر رو اجرا کنید:
