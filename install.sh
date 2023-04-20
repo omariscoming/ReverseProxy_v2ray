@@ -11,7 +11,7 @@ ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/
 sed -i "s/_;/$DOMAIN;/" "/etc/nginx/sites-available/$DOMAIN"
 sed -i "s/ default_server//" "/etc/nginx/sites-available/$DOMAIN"
 sed -i "21 r /root/ReverseProxy_v2ray/reverse.txt" "/etc/nginx/sites-available/$DOMAIN"
-certbot --nginx --agree-tos --no-eff-email --redirect --expand -d $DOMAIN --register-unsafely-without-email
+certbot --nginx --agree-tos --no-eff-email --redirect --expand --force-renewal --reinstall --non-interactive -d $DOMAIN --register-unsafely-without-email
 systemctl restart nginx
 }
 
